@@ -125,8 +125,8 @@ const Draggable = () => {
           };
 
           const isInCat =
-            Math.abs(boxCenter.x - catCenter.x) <= rw(18.75) &&
-            Math.abs(boxCenter.y - catCenter.y) <= rw(18.75);
+            Math.abs(boxCenter.x - catCenter.x) <= rw(58.75) &&
+            Math.abs(boxCenter.y - catCenter.y) <= rw(58.75);
 
             if (isInCat) {
               setIsEating(true);
@@ -161,14 +161,14 @@ const Draggable = () => {
   const platePositions = getPlatePositions();
 
   // Determine cat size based on orientation.
-  const catSize = isLandscape ? rw(25) : rw(35);
+  const catSize = isLandscape ? rw(25) : rw(60);
 
   return (
     <View style={styles.container}>
       {/* Updated CatFace Container with dynamic top */}
       <View style={{
         position: 'absolute',
-        top: isLandscape ? rh(-2) : rh(5),
+        top: isLandscape ? rh(-5) : rh(8),
         width: rw(100),
         justifyContent: 'center',
         alignItems: 'center',

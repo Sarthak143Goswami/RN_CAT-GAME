@@ -11,11 +11,11 @@ interface EatingProps {
 
 const CatFace: React.FC<EatingProps> = ({ isEating, catSize }) => {
   // Adjust these multipliers as needed.
-  const baseWidth = catSize;             // Base animation width
+  const baseWidth = catSize ;             // Base animation width
   const baseHeight = catSize * 1.2;        // Base animation height (a bit taller)
   const overlayWidth = catSize * 0.3;      // Eating overlay width
   const overlayHeight = catSize * 0.3;     // Eating overlay height
-  const containerTop = catSize * 0.15;     // Adjust container's top position based on catSize
+  const containerTop = catSize * 0.30;     // Adjust container's top position based on catSize
   const containerWidth = catSize * 1.5;    // Container width to allow space for the animations
 
   return (
